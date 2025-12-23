@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Para você ❤️</title>
+  <style>
+    body {
+      background: linear-gradient(120deg, #0f0c29, #302b63, #24243e);
+      color: white;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+    .card {
+      max-width: 600px;
+      margin: auto;
+      background: rgba(255,255,255,0.08);
+      padding: 30px;
+      border-radius: 20px;
+    }
+    button {
+      background: crimson;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 20px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    button:hover {
+      background: #ff3366;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>Oi, meu amor ❤️</h1>
+    <p>Fiz esse site só pra você.</p>
+
+    <button onclick="mostrar()">Clique aqui</button>
+
+    <p id="surpresa" class="hidden">
+      Esses 2 anos com você foram os melhores da minha vida.<br>
+      Obrigado por existir, por me amar e por ser quem você é.<br><br>
+      Eu te amo mais do que consigo explicar.
+    </p>
+  </div>
+
+  <script>
+    function mostrar() {
+      document.getElementById("surpresa").classList.remove("hidden");
+    }
+  </script>
+
+</body>
+</html>
